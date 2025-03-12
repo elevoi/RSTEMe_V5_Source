@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/chart/iconChartCrosshair_Off.jpg</file>
+        <file>icon/chart/iconChartCrosshair_On.jpg</file>
+        <file>icon/chart/iconChartCallout_Off.jpg</file>
+        <file>icon/chart/iconChartCallout_On.jpg</file>
+        <file>icon/chart/iconChartClear_Off.jpg</file>
+        <file>icon/chart/iconChartClear_On.jpg</file>
+        <file>icon/chart/iconChartPause_Off.jpg</file>
+        <file>icon/chart/iconChartPause_On.jpg</file>
+        <file>icon/chart/iconChartPlay_Off.jpg</file>
+        <file>icon/chart/iconChartPlay_On.jpg</file>
+        <file>icon/chart/iconChartTable_Off.jpg</file>
+        <file>icon/chart/iconChartTable_On.jpg</file>
+        <file>icon/chart/iconChartManual_Off.jpg</file>
+        <file>icon/chart/iconChartManual_On.jpg</file>
+        <file>icon/chart/iconChartDot_Off.jpg</file>
+        <file>icon/chart/iconChartDot_On.jpg</file>
+        <file>icon/chart/iconChartLine_Off.jpg</file>
+        <file>icon/chart/iconChartLine_On.jpg</file>
+        <file>icon/chart/iconChartSpline_Off.jpg</file>
+        <file>icon/chart/iconChartSpline_On.jpg</file>
+        <file>icon/chart/iconChartClock_On.jpg</file>
+        <file>icon/chart/iconPracticeTime_On.jpg</file>
+        <file>icon/chart/iconChartLogarit_Off.jpg</file>
+        <file>icon/chart/iconChartLogarit_On.jpg</file>
+        <file>icon/chart/iconChartMultiY_Off.jpg</file>
+        <file>icon/chart/iconChartMultiY_On.jpg</file>
+        <file>icon/chart/iconChartSingleY_Off.jpg</file>
+        <file>icon/chart/iconChartSingleY_On.jpg</file>
+        <file>icon/chart/iconExportFile_Off.jpg</file>
+        <file>icon/chart/iconExportFile_On.jpg</file>
+        <file>icon/chart/iconSaveFile_Off.jpg</file>
+        <file>icon/chart/iconSaveFile_On.jpg</file>
+        <file>icon/chart/iconOpenFile_Off.jpg</file>
+        <file>icon/chart/iconOpenFile_On.jpg</file>
+        <file>icon/chart/iconSeriesCheck_Off.jpg</file>
+        <file>icon/chart/iconSeriesCheck_On.jpg</file>
+        <file>icon/chart/iconChartMinus_Off.jpg</file>
+        <file>icon/chart/iconChartMinus_On.jpg</file>
+        <file>icon/chart/iconChartPlus_Off.jpg</file>
+        <file>icon/chart/iconChartPlus_On.jpg</file>
+    </qresource>
+</RCC>

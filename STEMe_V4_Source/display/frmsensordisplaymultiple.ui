@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmSensorDisplayMultiple</class>
+ <widget class="QMainWindow" name="FrmSensorDisplayMultiple">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>242</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(2,87, 122);
+background-color: rgb(64, 65, 66);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>508</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_status">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>212</y>
+      <width>351</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>6</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Số hàng tối đa:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_rowMax">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>4</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);</string>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="value">
+      <number>3</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton_cancel">
+    <property name="geometry">
+     <rect>
+      <x>388</x>
+      <y>215</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 15px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

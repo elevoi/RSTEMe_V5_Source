@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/steme/steme_logo.jpg</file>
+        <file>icon/steme/steme_icon.jpg</file>
+    </qresource>
+</RCC>
