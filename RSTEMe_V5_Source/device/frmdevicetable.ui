@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmDeviceTable</class>
+ <widget class="QMainWindow" name="FrmDeviceTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget_Group">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>111</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 240, 240);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="movement">
+     <enum>QListView::Static</enum>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::IconMode</enum>
+    </property>
+    <property name="modelColumn">
+     <number>0</number>
+    </property>
+    <property name="uniformItemSizes">
+     <bool>true</bool>
+    </property>
+    <property name="selectionRectVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_groupSensor">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>120</y>
+      <width>100</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton#toolButton_groupSensor{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 15px;
+}
+QToolButton#toolButton_groupSensor:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Cảm biến</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../group.qrc">
+      <normaloff>:/icon/group/iconSensorGroup_off.jpg</normaloff>
+      <activeoff>:/icon/group/iconSensorGroup_on.jpg</activeoff>:/icon/group/iconSensorGroup_off.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>75</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_groupModule">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>220</y>
+      <width>100</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton#toolButton_groupModule{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 15px;
+}
+QToolButton#toolButton_groupModule:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Mô đun thực hành</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../group.qrc">
+      <normaloff>:/icon/group/iconModuleGroup_off.jpg</normaloff>
+      <activeoff>:/icon/group/iconModuleGroup_on.jpg</activeoff>:/icon/group/iconModuleGroup_off.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>75</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_groupSystem">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>320</y>
+      <width>100</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton#toolButton_groupSystem{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 15px;
+}
+QToolButton#toolButton_groupSystem:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Mô hình thí nghiệm</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../group.qrc">
+      <normaloff>:/icon/group/iconSystemGroup_off.jpg</normaloff>
+      <activeoff>:/icon/group/iconSystemGroup_on.jpg</activeoff>:/icon/group/iconSystemGroup_off.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>75</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_groupSoftware">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>20</y>
+      <width>100</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton#toolButton_groupSoftware{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 15px;
+}
+QToolButton#toolButton_groupSoftware:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Phần mềm</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../group.qrc">
+      <normaloff>:/icon/group/iconSoftwareGroup_off.jpg</normaloff>
+      <activeoff>:/icon/group/iconSoftwareGroup_on.jpg</activeoff>:/icon/group/iconSoftwareGroup_off.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>75</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_Type">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>871</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>565</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_selectDevice">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>565</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(225, 225, 225);</string>
+    </property>
+    <property name="text">
+     <string>Chọn thiết bị</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>toolButton_groupSoftware</tabstop>
+  <tabstop>toolButton_groupSensor</tabstop>
+  <tabstop>toolButton_groupModule</tabstop>
+  <tabstop>toolButton_groupSystem</tabstop>
+  <tabstop>pushButton_selectDevice</tabstop>
+  <tabstop>pushButton_Cancel</tabstop>
+  <tabstop>listWidget_Type</tabstop>
+  <tabstop>listWidget_Group</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../group.qrc"/>
+ </resources>
+ <connections/>
+</ui>

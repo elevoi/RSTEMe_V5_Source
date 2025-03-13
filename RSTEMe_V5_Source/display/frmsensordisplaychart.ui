@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmSensorDisplayChart</class>
+ <widget class="QMainWindow" name="FrmSensorDisplayChart">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>779</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsViewChart">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>40</y>
+      <width>1151</width>
+      <height>740</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_Header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 240, 240);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>10</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+color: rgb(9, 87, 147);</string>
+     </property>
+     <property name="text">
+      <string>Bối cảnh đồ thị</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_antiAliasing">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>12</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+color: rgb(9, 87, 147);</string>
+     </property>
+     <property name="text">
+      <string>Khử răng cưa</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_legend">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>8</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+color: rgb(2, 87, 122);
+background-color: rgb(255, 255, 255);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+
+QComboBox::drop-down{
+width: 20;
+}
+QComboBox:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>10</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+color: rgb(9, 87, 147);</string>
+     </property>
+     <property name="text">
+      <string>Đường ghi chú</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_theme">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>8</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+color: rgb(2, 87, 122);
+background-color: rgb(255, 255, 255);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+
+QComboBox::drop-down{
+width: 20;
+}
+QComboBox:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>6</y>
+       <width>3</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>6</y>
+       <width>3</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_toolTrack">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>51</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 240, 240);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_toolCrosshair">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../chart.qrc">
+       <normaloff>:/icon/chart/iconChartCrosshair_Off.jpg</normaloff>
+       <activeoff>:/icon/chart/iconChartCrosshair_On.jpg</activeoff>:/icon/chart/iconChartCrosshair_Off.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_toolCallout">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>60</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../chart.qrc">
+       <normaloff>:/icon/chart/iconChartCallout_Off.jpg</normaloff>
+       <activeoff>:/icon/chart/iconChartCallout_On.jpg</activeoff>:/icon/chart/iconChartCallout_Off.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_toolControl">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>590</y>
+      <width>51</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 240, 240);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="toolButton_toolPause">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>60</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../chart.qrc">
+       <normaloff>:/icon/chart/iconChartPause_Off.jpg</normaloff>
+       <activeoff>:/icon/chart/iconChartPause_On.jpg</activeoff>:/icon/chart/iconChartPause_Off.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_toolClear">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>140</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../chart.qrc">
+       <normaloff>:/icon/chart/iconChartClear_Off.jpg</normaloff>
+       <activeoff>:/icon/chart/iconChartClear_On.jpg</activeoff>:/icon/chart/iconChartClear_Off.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>-7</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_toolPlay">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+color: rgb(2, 87, 122);
+background-color: rgb(240, 240, 240);
+border: none;
+border-style: outset;
+border-width: 0px;
+border-radius: 10px;
+}
+QToolButton:hover{
+background-color: rgb(25, 149, 173);
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../chart.qrc">
+       <normaloff>:/icon/chart/iconChartPlay_Off.jpg</normaloff>
+       <activeoff>:/icon/chart/iconChartPlay_On.jpg</activeoff>:/icon/chart/iconChartPlay_Off.jpg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_theme</tabstop>
+  <tabstop>comboBox_legend</tabstop>
+  <tabstop>checkBox_antiAliasing</tabstop>
+  <tabstop>toolButton_toolCrosshair</tabstop>
+  <tabstop>toolButton_toolCallout</tabstop>
+  <tabstop>toolButton_toolPlay</tabstop>
+  <tabstop>toolButton_toolPause</tabstop>
+  <tabstop>toolButton_toolClear</tabstop>
+  <tabstop>graphicsViewChart</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../chart.qrc"/>
+ </resources>
+ <connections/>
+</ui>
